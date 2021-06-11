@@ -76,35 +76,40 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 ### MVP
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Finding API | H | 2hrs| 2hrs | 2hrs |
-| Testing API | H | 3hrs| 3hrs | 3hrs |
-| Filling out README.md | M | 2.5hrs | 3hrs | 3hrs |
-| React Architecture Diagram | M | 1hrs | 1hrs | 1hrs |
-| Time-Priority Matrix | M | 1.5hrs | 1hrs | 1hrs |
-| Wireframes | M | 2hrs | 1.5hrs | 1.5hrs |
-| Create Character List (API data) | H | 3hrs| 3hrs | 3hrs |
-| Create Character Info Cards (API data) | H | 3hrs | 3hrs | 3hrs |
-| Adding and removing Fave Heroes | H | 2.5hrs | 1.5hrs | 1.5hrs |
-| Adding Sort/Filter | M | 3hrs| 2.5hrs | 2.5hrs |
-| Adding Search | M | 2hrs| 2hrs | 2hrs |
-| Generate Hero/Villian alias and quirk | H | 3 hrs | 3hrs | 3hrs |
-| Creating the Nav | H | 2 hrs | 2hrs | 2hrs |
-| Styling Mobile First| H | 2 hrs | 4hrs | 4hrs |
-| Styling Tablet | M | 2 hrs | 2.5hrs | 2.5hrs |
-| Styling Desktop | M | 2 hrs | 2hrs | 2hrs |
-| Total | H | 36.5hrs| 37hrs | 37hrs |
+| Component | Priority | Estimated Time | Time Invetsted | 
+| --- | :---: |  :---: | :---: |
+| Filling out README.md  | M | 3hrs| 2.5hrs |
+| Wireframes  | M | 1.5hrs| 1hrs |
+| Time-Priority Matrix | M | 1.5hrs | 1hrs |
+| Architecture Diagrams | M | 1.5hrs | hrs |
+| Learning Python/Django | H | 3hrs | hrs |
+| Test Creating Backend | H | 2.5hrs | hrs |
+| Create Backend | H | 3hrs| hrs |
+| Create Seed Data | H | 3hrs | hrs |
+| Test CRUD Functionality | H | 1.5hrs | hrs |
+| Set up Frontend Files | M | 3hrs| hrs |
+| Create the Routes and Links | M | 2.5hrs| hrs |
+| Create Home Page | H | 2hrs | hrs |
+| Create the Nav/Footer | M | 3hrs | hrs |
+| Create Menu Page | M | 2hrs | hrs |
+| Create Drink Page | M | 2hrs | hrs |
+| Create Cart Page | M | 2hrs | hrs |
+| Styling Mobile First | H | 3hrs | hrs |
+| Styling Tablet | M | 2hrs | hrs |
+| Styling Desktop | M | 3hrs | hrs |
+| Additional Styling | L | 3hrs | hrs |
+| Add animations | L | 3hrs | hrs |
+| Total | H | 51hrs| hrs |
 
 ### PostMVP
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Create trivia data array | L | 3hrs | hrs | hrs |
-| Randomization of the questions and answers | L | 3hrs | hrs | hrs |
-| Create the trvia page | L | 3hrs | hrs | hrs |
-| Add some animation | L | 3hrs | hrs | hrs
-| Total | L | 12hrs| hrs | hrs |
+| Component | Priority | Estimated Time | Time Invetsted |
+| --- | :---: |  :---: | :---: |
+| Add Login/Signup Page | L | 3hrs | hrs |
+| Add Profile Page | L | 3hrs | hrs |
+| Add Backend models and controller for login/signup | L | 3hrs | hrs |
+| Add Backend models and Controller for Cart/Checkout | L | 3hrs | hrs |
+| Total | L | 12hrs| hrs |
 
 ## Additional Libraries
  <!-- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc.  -->
