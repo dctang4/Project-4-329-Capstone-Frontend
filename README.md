@@ -76,7 +76,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 ### MVP
 
-| Component | Priority | Estimated Time | Time Invetsted | 
+| Component | Priority | Estimated Time | Time Invested | 
 | --- | :---: |  :---: | :---: |
 | Filling out README.md  | M | 3hrs| 2.5hrs |
 | Wireframes  | M | 1.5hrs| 1hrs |
