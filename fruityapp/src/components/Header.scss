@@ -2,9 +2,10 @@
 @import "./scss/config";
 
 .header {
-  position: absolute;
-  width: 100%;
-  max-width: 1200px;
+  // position: absolute;
+  // width: 100%;
+  // max-width: 1200px;
+  height: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

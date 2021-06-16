@@ -1,6 +1,7 @@
 @import "./scss/config";
 
 .main {
-  padding: 50px 0 35px;
-  height: calc(100vh -84px);
+  // padding: 50px 0 35px;
+  height: calc(100vh - 85px);
+  overflow-y: auto;
 }
