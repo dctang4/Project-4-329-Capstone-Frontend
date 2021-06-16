@@ -1,9 +1,16 @@
 import { useEffect, useState } from "react";
 // import Router from "react-router-dom"
-import Header from "./components/Header"
-import Main from "./components/Main"
-import Footer from "./components/Footer"
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
 import './App.scss';
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { far } from "@fortawesome/free-regular-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+
+library.add(fas, far, fab);
 
 function App() {
   // backend api url
@@ -31,7 +38,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Main />
+      <Main fruityData={fruityData}/>
       <Footer />
     </div>
   );

@@ -81,12 +81,12 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Filling out README.md  | M | 3hrs| 2.5hrs |
 | Wireframes  | M | 1.5hrs| 1hrs |
 | Time-Priority Matrix | M | 1.5hrs | 1hrs |
-| Architecture Diagrams | M | 1.5hrs | hrs |
-| Learning Python/Django | H | 3hrs | hrs |
-| Test Creating Backend | H | 2.5hrs | hrs |
-| Create Backend | H | 3hrs| hrs |
-| Create Seed Data | H | 3hrs | hrs |
-| Test CRUD Functionality | H | 1.5hrs | hrs |
+| Architecture Diagrams | M | 1.5hrs | 1hrs |
+| Learning Python/Django | H | 3hrs | 4hrs |
+| Test Creating Backend | H | 2.5hrs | 4hrs |
+| Create Backend | H | 3hrs| 2hrs |
+| Create Seed Data | H | 3hrs | 2hrs |
+| Test CRUD Functionality | H | 1.5hrs | 1.5hrs |
 | Set up Frontend Files | M | 3hrs| hrs |
 | Create the Routes and Links | M | 2.5hrs| hrs |
 | Create Home Page | H | 2hrs | hrs |
