@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import "../scss/config";
+
+.menu {
+  color: black;
+  h1 {
+    color: $fruity;
+  }
+  h2 {
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    text-shadow:  -1px 1px 10px $myred, 
+                  1px 1px 10px $myred, 
+                  1px -1px 10px $myred,
+                  1px -1px 10px $myred;
+    width: 95%;
+    margin: 15px auto 5px;
+    padding: 2px;
+    span {
+      color: red;
+      text-shadow: none;
+    }
+  }
+  .menu-item, .sizes {
+    display: grid;
+    grid-template-columns: 3fr 0.7fr 0.7fr;
+    text-align: left;
+    width: 88%;
+    padding-left: 6%;
+    h4, p {
+      margin: 5px 0;
+    }
+    p {
+      text-align: right;
+    }
+  }
+  .sizes {
+    p {
+      color: white;
+      font-weight: 900;
+      background-color: green;
+      margin: auto 0 auto auto;
+      padding: 2px 8px;
+      border-radius: 50%;
+      box-shadow: 0 0 7px 5px white;
+    }
+  }
+  .menu-item {
+    a{
+      color: black;
+      text-decoration: none;
+    }
+    
+  }
+}
