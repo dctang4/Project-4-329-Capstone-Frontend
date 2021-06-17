@@ -6,14 +6,14 @@ $myred: rgb(255, 0, 64);
   background-color: white;
   border-radius: 5px;
   border: 2px solid black;
-  box-shadow: 0 0 2px 1px $myred;
+  box-shadow: 0 0 2px 1px white;
   font-weight: 600;
   margin: 20px;
   padding: 2px 5px;
   transition: all 0.2s;
   &:hover {
     cursor: pointer;
-    box-shadow: 0 0 5px 2px $myred;
+    box-shadow: 0 0 5px 2px green;
     background-color: blanchedalmond;
   }
 }

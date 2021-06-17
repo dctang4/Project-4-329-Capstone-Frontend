@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './Cart.scss'
 
 const Cart = (props) => {
@@ -13,7 +14,7 @@ const Cart = (props) => {
       return (
         <div className='cart-item'>
           <div className='cart-item-info'>
-            <h4>{drink.name}</h4>
+            <h3>{drink.name}</h3>
             <ul>
               <li>ice: {drink.ice}</li>
               <li>sugar: {drink.sugar}</li>
@@ -21,7 +22,8 @@ const Cart = (props) => {
               <li>size: {drink.size}</li>
             </ul>
           </div>
-          <h4>${drink.price}</h4>
+          <h3 className='item-price'>${drink.price}</h3>
+          <h4 onClick={() => handleRemove(index)}>X</h4>
         </div>
       )
     })
@@ -32,10 +34,16 @@ const Cart = (props) => {
         <div className='cart-items'>
           {cartArr}
         </div>
+        <hr />
         <div className='total'>
           <h3>Total</h3>
-          <h3>${total.toFixed(2)}</h3>
+          <h3 className='total-price'>${total.toFixed(2)}</h3>
+          <p></p>
         </div>
+        <Link to='/'>
+          <button onClick={handleCheckout}>Checkout</button>
+        </Link>
+        
       </div>
     )
   }

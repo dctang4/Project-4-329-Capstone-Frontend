@@ -1,0 +1,50 @@
+@import "../scss/config";
+
+.cart {
+  max-width: 750px;
+  margin: 0 auto;
+
+  .cart-item {
+    display: grid;
+    grid-template-columns: 4fr 1fr 0.4fr;
+
+    h3, h4 {
+      margin: 0;
+    }
+    .cart-item-info {
+      text-align: left;
+      margin-left: 5px;
+      ul {
+        margin: 2px 0 10px 15px;
+        padding: 0;
+        li {
+          list-style-type: none;
+          color: black;
+        }
+      }
+    }
+    .item-price {
+      text-align: right;
+    }
+    h4 {
+      color: black;
+    }
+  }
+
+  hr {
+    border: 1px solid black;
+    max-width: 800px;
+  }
+  .total {
+    display: grid;
+    grid-template-columns: 4fr 1fr 0.4fr;
+    text-align: left;
+    margin-left: 5px;
+    .total-price {
+      text-align: right;
+    }
+  }
+  button {
+    @include buttons();
+  }
+}

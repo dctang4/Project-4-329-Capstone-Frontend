@@ -49,11 +49,12 @@ function App() {
   }
 
   const handleRemove = (index) => {
-    setCartList(cartList.splice(index, 1))
+    setCartList(cartList.filter((drink, i) => i !== index))
   }
 
   const handleCheckout = () => {
     setCartList([])
+    alert("Your order has been recieved!")
   }
 
   return (
