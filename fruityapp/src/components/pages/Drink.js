@@ -64,7 +64,9 @@ const Drink = (props) => {
 
     const handleSubmit = (event) => {
       event.preventDefault();
-      handleAdd(drinkData, price, selections);
+      if (price !== 'NA') {
+        handleAdd(drinkData, price, selections);
+      }
     };
 
     return (
