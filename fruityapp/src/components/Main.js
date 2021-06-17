@@ -8,7 +8,7 @@ import Drink from './pages/Drink'
 import Cart from './pages/Cart'
 
 const Main = (props) => {
-  const {fruityData, handleAdd} = props
+  const {fruityData, cartList, handleAdd, handleRemove, handleCheckout} = props
 
   return (
     <div className='main'>
@@ -29,7 +29,11 @@ const Main = (props) => {
           }
         />
         <Route exact path='/cart'>
-          <Cart />
+          <Cart 
+            cartList={cartList}
+            handleRemove={handleRemove}
+            handleCheckout={handleCheckout}
+          />
         </Route>
       </Switch>
     </div>

@@ -35,10 +35,7 @@ function App() {
   useEffect(() => {getData()}, [])
   // console.log(fruityData)
 
-
   const [cartList, setCartList] = useState([])
-
-  
 
   const handleAdd = (drink, price, selection) => {
     setCartList([
@@ -51,12 +48,23 @@ function App() {
     ])
   }
 
+  const handleRemove = (index) => {
+    setCartList(cartList.splice(index, 1))
+  }
+
+  const handleCheckout = () => {
+    setCartList([])
+  }
+
   return (
     <div className="App">
       <Header cartList={cartList}/>
       <Main 
         fruityData={fruityData}
+        cartList={cartList}
         handleAdd={handleAdd}
+        handleRemove={handleRemove}
+        handleCheckout={handleCheckout}
       />
       <Footer />
     </div>
