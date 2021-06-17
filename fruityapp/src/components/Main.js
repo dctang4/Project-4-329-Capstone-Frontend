@@ -8,7 +8,7 @@ import Drink from './pages/Drink'
 import Cart from './pages/Cart'
 
 const Main = (props) => {
-  const {fruityData} = props
+  const {fruityData, handleAdd} = props
 
   return (
     <div className='main'>
@@ -22,7 +22,10 @@ const Main = (props) => {
         <Route 
           exact path='/menu/:drink'
           render={(rp) =>
-            <Drink {...rp}/>
+            <Drink 
+              {...rp}
+              handleAdd={handleAdd}
+            />
           }
         />
         <Route exact path='/cart'>

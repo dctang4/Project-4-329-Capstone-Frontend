@@ -33,12 +33,24 @@ function App() {
   }
 
   useEffect(() => {getData()}, [])
-  console.log(fruityData)
+  // console.log(fruityData)
+
+
+  const [cartList, setCartList] = useState([])
+
+  
+
+  const handleAdd = (drink, selection) => {
+    setCartList([...cartList, {"name": drink.name, ...selection}])
+  }
 
   return (
     <div className="App">
-      <Header />
-      <Main fruityData={fruityData}/>
+      <Header cartList={cartList}/>
+      <Main 
+        fruityData={fruityData}
+        handleAdd={handleAdd}
+      />
       <Footer />
     </div>
   );
