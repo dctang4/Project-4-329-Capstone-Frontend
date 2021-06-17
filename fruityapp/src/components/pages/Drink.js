@@ -52,23 +52,34 @@ const Drink = (props) => {
       });
     };
 
+    const itemPrice = () => {
+      if (selections.size === "M - Medium") {
+        return drinkData.price.split("/")[0];
+      } else {
+        return drinkData.price.split("/")[1];
+      }
+    };
+
+    const price = itemPrice();
+
     const handleSubmit = (event) => {
-      event.preventDefault()
-      handleAdd(drinkData, selections)
-    }
+      event.preventDefault();
+      handleAdd(drinkData, price, selections);
+    };
 
     return (
       <div className="drink">
         <h1>{drinkData.name}</h1>
         <div className="drink-info">
-          <h2>Type: <span>{drinkData.type}</span></h2>
-          <h2>Info: <span>{drinkData.info}</span></h2>
+          <h2>
+            Type: <span>{drinkData.type}</span>
+          </h2>
+          <h2>
+            Info: <span>{drinkData.info}</span>
+          </h2>
         </div>
-        <form
-          className="selections"
-          onSubmit={handleSubmit}
-        >
-          <div className='selection-options'>
+        <form className="selections" onSubmit={handleSubmit}>
+          <div className="selection-options">
             <label>
               <h3>Ice Level</h3>
               <select name="ice" value={selections.ice} onChange={handleChange}>
@@ -106,6 +117,9 @@ const Drink = (props) => {
               </select>
             </label>
           </div>
+          <h3>
+            Price: <span>${price}</span>
+          </h3>
           <input type="submit" value="Add to Cart" />
         </form>
       </div>

@@ -1,18 +1,19 @@
 @import "../scss/config";
 
 .drink {
+  span {
+    color: black;
+    font-weight: 400;
+  }
+  
   .drink-info {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+
     h2 {
       margin: 0 20px;
-      span {
-        color: black;
-        font-weight: 400
-      }
-      
     }
   }
   .selections {
