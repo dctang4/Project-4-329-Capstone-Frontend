@@ -54,9 +54,31 @@ const Drink = (props) => {
 
     const itemPrice = () => {
       if (selections.size === "M - Medium") {
-        return drinkData.price.split("/")[0];
+        if (selections.topping !== 'None') {
+          const price = (parseFloat(drinkData.price.split("/")[0]) + 0.50).toString()
+          if (price.length === 1) {
+            return (price + ".00")
+          } else if  (price.length === 3) {
+            return (price + "0")
+          } else {
+            return price
+          }
+        } else {
+          return drinkData.price.split("/")[0];
+        }
       } else {
-        return drinkData.price.split("/")[1];
+        if (selections.topping !== 'None') {
+          const price = (parseFloat(drinkData.price.split("/")[1]) + 0.50).toString()
+          if (price.length === 1) {
+            return (price + ".00")
+          } else if  (price.length === 3) {
+            return (price + "0")
+          } else {
+            return price
+          }
+        } else {
+          return drinkData.price.split("/")[1];
+        }
       }
     };
 
