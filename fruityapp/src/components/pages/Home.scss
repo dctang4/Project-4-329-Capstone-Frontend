@@ -15,7 +15,7 @@
   .top-drinks {
     img {
       width: 45%;
-      max-width: 250px;
+      max-width: 247px;
     }
   }
   h2 {
@@ -29,24 +29,32 @@
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    h3 {
-      margin: 15px 0 10px;
-      font-size: 23px;
-    }
-    p {
-      margin: 0;
-      font-size: 18px;
-    }
-    .hours {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      min-width: 250px;
-      ul {
-        padding-left: 10px;
-        li {
-          list-style-type: none;
-          font-size: 18px;
+    .location {
+      background-color: white;
+      padding: 0 10px;
+      margin-bottom: 10px;
+      border: 2px solid lightgrey;
+      h3 {
+        margin: 15px 0 10px;
+        font-size: 23px;
+      }
+      p {
+        margin: 0;
+        font-size: 18px;
+        color: black;
+      }
+      .hours {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-width: 250px;
+        ul {
+          padding-left: 10px;
+          li {
+            list-style-type: none;
+            font-size: 18px;
+            color: black;
+          }
         }
       }
     }
