@@ -43,7 +43,6 @@ const Cart = (props) => {
         <Link to='/'>
           <button onClick={handleCheckout}>Checkout</button>
         </Link>
-        
       </div>
     )
   }

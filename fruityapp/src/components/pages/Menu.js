@@ -43,69 +43,68 @@ const Menu = (props) => {
     const specialty = filterDrinks(fruityData, 'Specialty Drink')
     const freshTea = filterDrinks(fruityData, 'Fresh Brewed Tea')
 
-
     return (
       <div className='menu'>
         <h1>Menu</h1>
         <h2>FRESH FRUITY ICED TEA</h2>
         <div className='sizes'>
-          <h5></h5>
+          <br></br>
           <p>M</p>
           <p>L</p>
         </div>
         {fruitTea}
         <h2><span>Yakult</span> DRINK</h2>
         <div className='sizes'>
-          <h5></h5>
+          <br></br>
           <p>M</p>
           <p>L</p>
         </div>
         {yakult}
         <h2>MILKCAP</h2>
         <div className='sizes'>
-          <h5></h5>
+          <br></br>
           <p>M</p>
           <p>L</p>
         </div>
         {milkCap}
         <h2>FRESH MILK</h2>
         <div className='sizes'>
-          <h5></h5>
+          <br></br>
           <p>M</p>
           <p>L</p>
         </div>
         {milk}
         <h2>SLUSH/SMOOTHIE</h2>
         <div className='sizes'>
-          <h5></h5>
+          <br></br>
           <p>M</p>
           <p>L</p>
         </div>
         {smoothie}
         <h2>MILK TEA</h2>
         <div className='sizes'>
-          <h5></h5>
+          <br></br>
           <p>M</p>
           <p>L</p>
         </div>
         {milkTea}
         <h2>SIGNATURE SMOOTHIES</h2>
         <div className='sizes'>
-          <h5></h5>
+          <br></br>
           <p>M</p>
           <p>L</p>
         </div>
         {signature}
         <h2>SPECIALTY DRINK</h2>
         <div className='sizes'>
-          <h5></h5>
+          <br></br>
           <p>M</p>
           <p>L</p>
         </div>
         {specialty}
         <h2>FRESH BREWED TEA</h2>
         <div className='sizes'>
-          <h5></h5>
+          <br></br>
           <p>M</p>
           <p>L</p>
         </div>

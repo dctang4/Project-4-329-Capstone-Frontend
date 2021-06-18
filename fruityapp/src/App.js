@@ -54,7 +54,7 @@ function App() {
 
   const handleCheckout = () => {
     setCartList([])
-    alert("Your order has been recieved!")
+    alert("Your order has been recieved! Thank You for Your Patronage!")
   }
 
   return (
