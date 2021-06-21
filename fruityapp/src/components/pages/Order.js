@@ -48,7 +48,7 @@ const Order = (props) => {
 
     return (
       <div className="order">
-        <h1>Order</h1>
+        <h1>Menu</h1>
         <h2>FRESH FRUITY ICED TEA</h2>
         <div className="order-items">
           <div className="sizes">

@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import './Header.scss'
 
@@ -30,7 +31,7 @@ const Header = (props) => {
       <div className='nav-links'>
         {cartCount}
         <Link to='/Order'>Order</Link>
-        <Link to='/cart'>Cart</Link>
+        <Link to='/cart'><FontAwesomeIcon className='cart-icon' icon={['fas', 'shopping-cart']} /></Link>
       </div>
       
 

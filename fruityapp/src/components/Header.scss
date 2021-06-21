@@ -32,13 +32,13 @@
 
     .cart-count {
       position: relative;
-      bottom: 25px;
-      right: -110px;
+      bottom: 28px;
+      right: -105px;
       color: black;
       margin: 0;
-      // width: 10px;
+      font-weight: 600;
       padding: 1px 4px;
-      background-color: green;
+      background-color: $myred;
       color: white;
       border-radius: 50%;
     }
@@ -48,6 +48,10 @@
       color: $fruity;
       text-decoration: none;
       padding: 5px 5px 5px 10px;
+      .cart-icon {
+        font-size: 20px;
+      }
     }
+
   }
 }
