@@ -1,7 +1,30 @@
 import React from "react";
+import {Link} from "react-router-dom"
 import "./Home.scss";
 
 const Home = (props) => {
+  const imgUrl = [
+    "https://res.cloudinary.com/dvxvez8mj/image/upload/c_crop,h_1000,w_400,x_0/v1624292808/Project%204/o_ueywdq.jpg", 
+    "https://res.cloudinary.com/dvxvez8mj/image/upload/c_crop,h_1000,w_400,x_400/v1624292808/Project%204/o_ueywdq.jpg", 
+    "https://res.cloudinary.com/dvxvez8mj/image/upload/c_crop,h_1000,w_400,x_0/v1623855217/Project%204/o_3_phk48b.jpg", 
+    "https://res.cloudinary.com/dvxvez8mj/image/upload/c_crop,h_1000,w_400,x_400/v1623855217/Project%204/o_3_phk48b.jpg", 
+    "https://res.cloudinary.com/dvxvez8mj/image/upload/c_crop,h_1000,w_333,x_0,y_167/v1623857687/Project%204/o_2_tz69vx.jpg",
+    "https://res.cloudinary.com/dvxvez8mj/image/upload/c_crop,h_1000,w_333,x_333,y_167/v1623857687/Project%204/o_2_tz69vx.jpg",
+    "https://res.cloudinary.com/dvxvez8mj/image/upload/c_crop,h_1000,w_400,x_0/v1623855217/Project%204/o_1_bl5qad.jpg", 
+    "https://res.cloudinary.com/dvxvez8mj/image/upload/c_crop,h_1000,w_400,x_400/v1623855217/Project%204/o_1_bl5qad.jpg"
+  ]
+
+  const topDrinksName = ["Fire Dragon", "Strawberry Mango", "Lime Tea", "Lemon Tea", "Strawberry Lemon", "Refreshing Mango", "Yellow Combo", "Grapefruit Limon"]
+
+  const topDrinks = imgUrl.map((img, index) => {
+    return (
+      <Link to={`/order/${topDrinksName[index]}`} >
+        <img src={img} alt="fruity drinks" />
+      </ Link>
+    )
+  }) 
+
+
   return (
     <div className="home">
       <h1>FRUITY</h1>
@@ -11,7 +34,8 @@ const Home = (props) => {
       />
       <h2>Top Drinks</h2>
       <div className="top-drinks">
-        <img
+        {topDrinks}
+        {/* <img
           src="https://res.cloudinary.com/dvxvez8mj/image/upload/v1623855217/Project%204/o_ueywdq.jpg"
           alt="fruity drinks"
         />
@@ -26,7 +50,7 @@ const Home = (props) => {
         <img
           src="https://res.cloudinary.com/dvxvez8mj/image/upload/v1623855217/Project%204/o_1_bl5qad.jpg"
           alt="fruity drinks"
-        />
+        /> */}
       </div>
       <h2>Locations</h2>
       <div className="locations">
