@@ -146,7 +146,7 @@ const Order = (props) => {
   };
 
   const loading = () => {
-    return <h1>order Loading...</h1>;
+    return <h1>Order Loading...</h1>;
   };
 
   // return (
