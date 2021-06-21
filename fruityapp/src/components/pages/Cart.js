@@ -51,7 +51,7 @@ const Cart = (props) => {
     return (
       <div className="cart">
         <h1>Cart</h1>
-        <h2>Cart is Empty</h2>
+        <h3>Cart is Empty</h3>
       </div>
     )
   }

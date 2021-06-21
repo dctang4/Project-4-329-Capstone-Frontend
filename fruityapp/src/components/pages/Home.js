@@ -1,58 +1,70 @@
 import React from "react";
-import {Link} from "react-router-dom"
-import Carousel from 'react-bootstrap/Carousel'
+import { Link } from "react-router-dom";
+import Carousel from "react-bootstrap/Carousel";
 
 import topDrinksData from "../../topDrinksData";
 import "./Home.scss";
 
 const Home = (props) => {
-  // const imgUrl = [
-  //   "https://res.cloudinary.com/dvxvez8mj/image/upload/c_crop,h_1000,w_400,x_0/v1624292808/Project%204/o_ueywdq.jpg", 
-  //   "https://res.cloudinary.com/dvxvez8mj/image/upload/c_crop,h_1000,w_400,x_400/v1624292808/Project%204/o_ueywdq.jpg", 
-  //   "https://res.cloudinary.com/dvxvez8mj/image/upload/c_crop,h_1000,w_400,x_0/v1623855217/Project%204/o_3_phk48b.jpg", 
-  //   "https://res.cloudinary.com/dvxvez8mj/image/upload/c_crop,h_1000,w_400,x_400/v1623855217/Project%204/o_3_phk48b.jpg", 
-  //   "https://res.cloudinary.com/dvxvez8mj/image/upload/c_crop,h_1000,w_333,x_0,y_167/v1623857687/Project%204/o_2_tz69vx.jpg",
-  //   "https://res.cloudinary.com/dvxvez8mj/image/upload/c_crop,h_1000,w_333,x_333,y_167/v1623857687/Project%204/o_2_tz69vx.jpg",
-  //   "https://res.cloudinary.com/dvxvez8mj/image/upload/c_crop,h_1000,w_400,x_0/v1623855217/Project%204/o_1_bl5qad.jpg", 
-  //   "https://res.cloudinary.com/dvxvez8mj/image/upload/c_crop,h_1000,w_400,x_400/v1623855217/Project%204/o_1_bl5qad.jpg"
-  // ]
 
-  // const topDrinksName = ["Fire Dragon", "Strawberry Mango", "Lime Tea", "Lemon Tea", "Strawberry Lemon", "Refreshing Mango", "Yellow Combo", "Grapefruit Limon"]
-
-  const topDrinks = topDrinksData.map(drink => {
+  const topDrinks = topDrinksData.map((drink) => {
     return (
-      <Link to={`/order/${drink.name}`} >
+      <Link to={`/order/${drink.name}`}>
         <img src={drink.url} alt="fruity drinks" />
-      </ Link>
-    )
-  }) 
+      </Link>
+    );
+  });
 
   return (
     <div className="home">
       <h1>FRUITY</h1>
-      <img
+      {/* <img
         src="https://res.cloudinary.com/dvxvez8mj/image/upload/v1623854525/Project%204/unnamed_bi7adn.png"
         alt="fruity drinks"
-      />
+      /> */}
+      <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://res.cloudinary.com/dvxvez8mj/image/upload/v1623854525/Project%204/unnamed_bi7adn.png"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        {/* <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="holder.js/800x400?text=Second slide&bg=282c34"
+            alt="Second slide"
+          />
+
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="holder.js/800x400?text=Third slide&bg=20232a"
+            alt="Third slide"
+          />
+
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item> */}
+      </Carousel>
+      <Link to="/order/"><button className='order-now'>Order Now</button></Link>
       <h2>Top Drinks</h2>
       <div className="top-drinks">
         {topDrinks}
-        {/* <img
-          src="https://res.cloudinary.com/dvxvez8mj/image/upload/v1623855217/Project%204/o_ueywdq.jpg"
-          alt="fruity drinks"
-        />
-        <img
-          src="https://res.cloudinary.com/dvxvez8mj/image/upload/v1623855217/Project%204/o_3_phk48b.jpg"
-          alt="fruity drinks"
-        />
-        <img
-          src="https://res.cloudinary.com/dvxvez8mj/image/upload/c_crop,h_1000,q_100,y_168/v1623857687/Project%204/o_2_tz69vx.jpg"
-          alt="fruity drinks"
-        />
-        <img
-          src="https://res.cloudinary.com/dvxvez8mj/image/upload/v1623855217/Project%204/o_1_bl5qad.jpg"
-          alt="fruity drinks"
-        /> */}
       </div>
       <h2>Locations</h2>
       <div className="locations">
@@ -61,7 +73,7 @@ const Home = (props) => {
           <p>250 Granite St.</p>
           <p>Braintree, MA 02184</p>
           <p>(781) 308-4362</p>
-          <br/>
+          <br />
           <h3>Hours</h3>
           <div className="hours">
             <ul>
@@ -89,7 +101,7 @@ const Home = (props) => {
           <p>77 Harvard Ave</p>
           <p>Allston, MA 02134</p>
           <p>(617) 208-8848</p>
-          <br/>
+          <br />
           <h3>Hours</h3>
           <div className="hours">
             <ul>

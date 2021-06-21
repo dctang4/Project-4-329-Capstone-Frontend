@@ -74,7 +74,7 @@ const Drink = (props) => {
 
     const handleSubmit = (event) => {
       event.preventDefault();
-      if (price !== 'NA') {
+      if (price !== 'NA' && price !== 'NaN') {
         handleAdd(drinkData, price, selections);
       }
     };

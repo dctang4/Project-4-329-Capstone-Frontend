@@ -15,6 +15,7 @@
       h3,
       h4 {
         margin: 0;
+        font-size: 19px;
       }
       .cart-item-info {
         text-align: left;
@@ -55,6 +56,10 @@
     margin: 0 5px;
     background-color: white;
     border: 2px solid lightgrey;
+    h3 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
     .total-price {
       text-align: right;
     }
