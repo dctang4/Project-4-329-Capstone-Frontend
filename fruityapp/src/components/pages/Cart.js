@@ -20,6 +20,7 @@ const Cart = (props) => {
               <li>sugar: {drink.sugar}</li>
               <li>topping: {drink.topping}</li>
               <li>size: {drink.size}</li>
+              <li>comments: <span>{drink.comments}</span></li>
             </ul>
           </div>
           <h3 className='item-price'>${drink.price}</h3>

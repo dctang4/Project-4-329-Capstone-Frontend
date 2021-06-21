@@ -11,6 +11,7 @@ const Drink = (props) => {
     sugar: "100% - Regular",
     topping: "None",
     size: "M - Medium",
+    comments: ""
   });
 
   const getData = async () => {
@@ -134,7 +135,16 @@ const Drink = (props) => {
                 {options(selectionsData.size)}
               </select>
             </label>
+            
           </div>
+          <h3>Comments <span className='max-char'>(max characters: 100)</span></h3>
+          <textarea 
+            placeholder='comments' 
+            name="comments"
+            maxLength={100}
+            value={selections.comments}
+            onChange={handleChange}
+          />
           <h3>
             Price: <span>${price}</span>
           </h3>

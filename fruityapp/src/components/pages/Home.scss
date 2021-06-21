@@ -11,8 +11,14 @@
   }
   .carousel {
     img {
-      max-width: 90%;
+      // max-width: 90%;
+      height: 70vW;
+      max-height: 700px;
       margin: auto;
+    }
+    span {
+      font-size: 36px;
+      color: black;
     }
   }
 
