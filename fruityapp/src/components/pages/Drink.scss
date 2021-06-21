@@ -1,6 +1,16 @@
 @import "../scss/config";
 
 .drink {
+  .back {
+    text-align: left;
+    width: 60px;
+    margin: 5px auto 5px 5px;
+    color: black;
+    &:hover {
+      cursor: pointer;
+      color: $myred;
+    }
+  }
   span {
     color: black;
     font-weight: 400;
@@ -24,7 +34,7 @@
       flex-wrap: wrap;
       justify-content: space-evenly;
       label {
-        margin: 0 15px;
+        margin: 0 12px;
         h3 {
           margin: 25px 0 5px;
           font-size: 20px;

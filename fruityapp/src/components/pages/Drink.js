@@ -3,7 +3,7 @@ import selectionsData from "../../selectionsData.js";
 import "./Drink.scss";
 
 const Drink = (props) => {
-  const { match, handleAdd } = props;
+  const { history, match, handleAdd } = props;
 
   const [drinkData, setDrinkData] = useState(null);
   const [selections, setSelections] = useState({
@@ -79,8 +79,14 @@ const Drink = (props) => {
       }
     };
 
+    const back = "<< Back"
+
     return (
       <div className="drink">
+        <p 
+          className='back'
+          onClick={() => history.push('/order/')}
+        >{back}</p>
         <h1>{drinkData.name}</h1>
         <div className="drink-info">
           <h2>
