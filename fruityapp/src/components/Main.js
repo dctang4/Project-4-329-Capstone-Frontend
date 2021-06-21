@@ -3,7 +3,7 @@ import {Route, Switch} from 'react-router-dom'
 import './Main.scss'
 
 import Home from './pages/Home'
-import Menu from './pages/Menu'
+import Order from './pages/Order'
 import Drink from './pages/Drink'
 import Cart from './pages/Cart'
 
@@ -16,11 +16,11 @@ const Main = (props) => {
         <Route exact path='/'>
           <Home />
         </Route>
-        <Route exact path='/menu'>
-          <Menu fruityData={fruityData}/>
+        <Route exact path='/order'>
+          <Order fruityData={fruityData}/>
         </Route>
         <Route 
-          exact path='/menu/:drink'
+          exact path='/order/:drink'
           render={(rp) =>
             <Drink 
               {...rp}

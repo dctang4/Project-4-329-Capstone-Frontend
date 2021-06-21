@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Menu.scss";
+import "./Order.scss";
 
-const Menu = (props) => {
+const Order = (props) => {
   const { fruityData } = props;
 
   const loaded = () => {
@@ -11,8 +11,8 @@ const Menu = (props) => {
         .filter((drink) => drink.type === filter)
         .map((drink) => {
           return (
-            <div className="menu-item">
-              <Link to={`/menu/${drink.name}`}>
+            <div className="order-item">
+              <Link to={`/order/${drink.name}`}>
                 <h4>{drink.name}</h4>
               </Link>
               <p>{drink.price.split("/")[0]}</p>
@@ -24,8 +24,8 @@ const Menu = (props) => {
 
     // const fruitTea = fruityData.filter(drink => drink.type === 'Fruit Tea').map(drink =>{
     //   return (
-    //     <div className='menu-item'>
-    //       <Link to={`/menu/${drink.name}`}>
+    //     <div className='order-item'>
+    //       <Link to={`/order/${drink.name}`}>
     //         <h4>{drink.name}</h4>
     //       </Link>
     //       <p>{drink.price.split('/')[0]}</p>
@@ -44,13 +44,15 @@ const Menu = (props) => {
     const specialty = filterDrinks(fruityData, "Specialty Drink");
     const freshTea = filterDrinks(fruityData, "Fresh Brewed Tea");
 
+    const click = '{click to order}'
+
     return (
-      <div className="menu">
-        <h1>Menu</h1>
+      <div className="order">
+        <h1>Order</h1>
         <h2>FRESH FRUITY ICED TEA</h2>
-        <div className="menu-items">
+        <div className="order-items">
           <div className="sizes">
-            <br></br>
+            <h5>{click}</h5>
             <p>M</p>
             <p>L</p>
           </div>
@@ -60,9 +62,9 @@ const Menu = (props) => {
         <h2>
           <span>Yakult</span> DRINK
         </h2>
-        <div className="menu-items">
+        <div className="order-items">
           <div className="sizes">
-            <br></br>
+            <h5>{click}</h5>
             <p>M</p>
             <p>L</p>
           </div>
@@ -70,9 +72,9 @@ const Menu = (props) => {
           {yakult}
         </div>
         <h2>MILKCAP</h2>
-        <div className="menu-items">
+        <div className="order-items">
           <div className="sizes">
-            <br></br>
+            <h5>{click}</h5>
             <p>M</p>
             <p>L</p>
           </div>
@@ -80,9 +82,9 @@ const Menu = (props) => {
           {milkCap}
         </div>
         <h2>FRESH MILK</h2>
-        <div className="menu-items">
+        <div className="order-items">
           <div className="sizes">
-            <br></br>
+            <h5>{click}</h5>
             <p>M</p>
             <p>L</p>
           </div>
@@ -90,9 +92,9 @@ const Menu = (props) => {
           {milk}
         </div>
         <h2>SLUSH/SMOOTHIE</h2>
-        <div className="menu-items">
+        <div className="order-items">
           <div className="sizes">
-            <br></br>
+            <h5>{click}</h5>
             <p>M</p>
             <p>L</p>
           </div>
@@ -100,9 +102,9 @@ const Menu = (props) => {
           {smoothie}
         </div>
         <h2>MILK TEA</h2>
-        <div className="menu-items">
+        <div className="order-items">
           <div className="sizes">
-            <br></br>
+            <h5>{click}</h5>
             <p>M</p>
             <p>L</p>
           </div>
@@ -110,9 +112,9 @@ const Menu = (props) => {
           {milkTea}
         </div>
         <h2>SIGNATURE SMOOTHIES</h2>
-        <div className="menu-items">
+        <div className="order-items">
           <div className="sizes">
-            <br></br>
+            <h5>{click}</h5>
             <p>M</p>
             <p>L</p>
           </div>
@@ -120,9 +122,9 @@ const Menu = (props) => {
           {signature}
         </div>
         <h2>SPECIALTY DRINK</h2>
-        <div className="menu-items">
+        <div className="order-items">
           <div className="sizes">
-            <br></br>
+            <h5>{click}</h5>
             <p>M</p>
             <p>L</p>
           </div>
@@ -130,9 +132,9 @@ const Menu = (props) => {
           {specialty}
         </div>
         <h2>FRESH BREWED TEA</h2>
-        <div className="menu-items">
+        <div className="order-items">
           <div className="sizes">
-            <br></br>
+            <h5>{click}</h5>
             <p>M</p>
             <p>L</p>
           </div>
@@ -144,12 +146,12 @@ const Menu = (props) => {
   };
 
   const loading = () => {
-    return <h1>Menu Loading...</h1>;
+    return <h1>order Loading...</h1>;
   };
 
   // return (
-  // <div className='menu'>
-  //   <h1>Menu</h1>
+  // <div className='order'>
+  //   <h1>order</h1>
 
   // </div>
   // )
@@ -157,4 +159,4 @@ const Menu = (props) => {
   return fruityData ? loaded() : loading();
 };
 
-export default Menu;
+export default Order;

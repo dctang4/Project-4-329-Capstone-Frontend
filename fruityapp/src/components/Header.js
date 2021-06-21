@@ -29,7 +29,7 @@ const Header = (props) => {
       
       <div className='nav-links'>
         {cartCount}
-        <Link to='/menu'>Menu</Link>
+        <Link to='/Order'>Order</Link>
         <Link to='/cart'>Cart</Link>
       </div>
       
