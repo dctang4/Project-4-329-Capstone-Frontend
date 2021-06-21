@@ -4,16 +4,19 @@ $myred: rgb(255, 0, 64);
 
 @mixin buttons(){
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 2px solid black;
   box-shadow: 0 0 2px 1px white;
+  font-size: 14px;
   font-weight: 600;
   margin: 20px;
-  padding: 2px 5px;
+  padding: 5px 10px;
   transition: all 0.2s;
   &:hover {
     cursor: pointer;
-    box-shadow: 0 0 5px 2px green;
-    background-color: blanchedalmond;
+    // box-shadow: 0 0 5px 2px green;
+    background-color: green;
+    border: 2px solid green;
+    color: white;
   }
 }
