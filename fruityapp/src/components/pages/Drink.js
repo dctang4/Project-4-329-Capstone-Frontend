@@ -137,7 +137,7 @@ const Drink = (props) => {
             </label>
             
           </div>
-          <h3>Comments <span className='max-char'>(max characters: 100)</span></h3>
+          <h3>Comments <span className='max-char'>(characters left: {100-selections.comments.length})</span></h3>
           <textarea 
             placeholder='comments' 
             name="comments"
