@@ -35,7 +35,10 @@ const Header = (props) => {
             <p id="order-link">Order</p>
           </Link>
 
-          <Dropdown.Toggle split variant="success" id="toggle" />
+          <Link to="/order">
+            <Dropdown.Toggle split variant="success" id="toggle" />
+          </Link>
+          
           <Dropdown.Menu>
             <Dropdown.Item href="#fruit-tea">fruit tea</Dropdown.Item>
             <Dropdown.Item href="#yakult">yakult</Dropdown.Item>
