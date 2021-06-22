@@ -48,12 +48,16 @@
       border-radius: 50%;
     }
     .dropdown {
-      a#order-link {
+      #order-link {
         background: none;
         border: none;
         margin: 0;
         padding: 0;
-        
+        color: $fruity;
+        &:active {
+          border: 3px solid rgba(0, 153, 0, 0.363);
+          border-radius: 7px 0 0 7px;
+        }
       }
       button#toggle {
         background: none;

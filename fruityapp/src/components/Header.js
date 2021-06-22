@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import Button from 'react-bootstrap/Button'
-import ButtonGroup from 'react-bootstrap/ButtonGroup'
+import Button from "react-bootstrap/Button";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Dropdown from "react-bootstrap/Dropdown";
 import SplitButton from "react-bootstrap/SplitButton";
 
@@ -21,6 +21,10 @@ const Header = (props) => {
   };
   const cartCount = cartCounter();
 
+  const handleClick = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <div className="header">
       <Link to="/">
@@ -29,10 +33,13 @@ const Header = (props) => {
 
       <div className="nav-links">
         {cartCount}
-        {/* <Link to='/Order'>Order</Link> */}
+        {/* <Link to="/order">Order</Link> */}
         <Dropdown as={ButtonGroup}>
-          <Button variant="success" href="/order/" id='order-link'>Order</Button>
-          <Dropdown.Toggle split variant="success" id='toggle'/>
+          <Link to="/order">
+            <p id="order-link">Order</p>
+          </Link>
+
+          <Dropdown.Toggle split variant="success" id="toggle" />
           <Dropdown.Menu>
             <Dropdown.Item href="#fruit-tea">fruit tea</Dropdown.Item>
             <Dropdown.Item href="#yakult">yakult</Dropdown.Item>
@@ -40,9 +47,15 @@ const Header = (props) => {
             <Dropdown.Item href="#milk">milk</Dropdown.Item>
             <Dropdown.Item href="#smoothie">smoothie</Dropdown.Item>
             <Dropdown.Item href="#milk-tea">milk tea</Dropdown.Item>
-            <Dropdown.Item href="#signature-smoothie">signature smoothie</Dropdown.Item>
-            <Dropdown.Item href="#specialty-drink">specialty drink</Dropdown.Item>
-            <Dropdown.Item href="#fresh-brewed-tea">fresh brewed tea</Dropdown.Item>
+            <Dropdown.Item href="#signature-smoothie">
+              signature smoothie
+            </Dropdown.Item>
+            <Dropdown.Item href="#specialty-drink">
+              specialty drink
+            </Dropdown.Item>
+            <Dropdown.Item href="#fresh-brewed-tea">
+              fresh brewed tea
+            </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
 
