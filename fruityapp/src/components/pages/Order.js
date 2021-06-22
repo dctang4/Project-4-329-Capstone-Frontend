@@ -6,6 +6,7 @@ const Order = (props) => {
   const { fruityData } = props;
 
   const loaded = () => {
+    
     const filterDrinks = (data, filter) => {
       return data
         .filter((drink) => drink.type === filter)
@@ -21,18 +22,6 @@ const Order = (props) => {
           );
         });
     };
-
-    // const fruitTea = fruityData.filter(drink => drink.type === 'Fruit Tea').map(drink =>{
-    //   return (
-    //     <div className='order-item'>
-    //       <Link to={`/order/${drink.name}`}>
-    //         <h4>{drink.name}</h4>
-    //       </Link>
-    //       <p>{drink.price.split('/')[0]}</p>
-    //       <p>{drink.price.split('/')[1]}</p>
-    //     </div>
-    //   )
-    // })
 
     const fruitTea = filterDrinks(fruityData, "Fruit Tea");
     const yakult = filterDrinks(fruityData, "Yakult");
