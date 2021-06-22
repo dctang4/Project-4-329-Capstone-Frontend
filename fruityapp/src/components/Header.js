@@ -1,42 +1,60 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import './Header.scss'
+import Button from 'react-bootstrap/Button'
+import ButtonGroup from 'react-bootstrap/ButtonGroup'
+import Dropdown from "react-bootstrap/Dropdown";
+import SplitButton from "react-bootstrap/SplitButton";
+
+import "./Header.scss";
 
 const Header = (props) => {
-  const {cartList} = props
+  const { cartList } = props;
 
   const cartCounter = () => {
     if (cartList.length > 0) {
-      return (
-        <p className='cart-count'>
-          {cartList.length}
-        </p>
-        )
+      return <p className="cart-count">{cartList.length}</p>;
     } else {
-      return (
-        <p style={{'display': 'none'}}>0</p>
-      )
+      return <p style={{ display: "none" }}>0</p>;
     }
-  }
-  const cartCount = cartCounter()
+  };
+  const cartCount = cartCounter();
 
   return (
-    <div className='header'>
-      <Link to='/'>
+    <div className="header">
+      <Link to="/">
         <h1>FRUITY</h1>
       </Link>
-      
-      <div className='nav-links'>
+
+      <div className="nav-links">
         {cartCount}
-        <Link to='/Order'>Order</Link>
-        <Link to='/cart'><FontAwesomeIcon className='cart-icon' icon={['fas', 'shopping-cart']} /></Link>
+        {/* <Link to='/Order'>Order</Link> */}
+        <Dropdown as={ButtonGroup}>
+          <Button variant="success" href="/order/" id='order-link'>Order</Button>
+          <Dropdown.Toggle split variant="success" id='toggle'/>
+          <Dropdown.Menu>
+            <Dropdown.Item href="#fruit-tea">fruit tea</Dropdown.Item>
+            <Dropdown.Item href="#yakult">yakult</Dropdown.Item>
+            <Dropdown.Item href="#milkcap">milkcap</Dropdown.Item>
+            <Dropdown.Item href="#milk">milk</Dropdown.Item>
+            <Dropdown.Item href="#smoothie">smoothie</Dropdown.Item>
+            <Dropdown.Item href="#milk-tea">milk tea</Dropdown.Item>
+            <Dropdown.Item href="#signature-smoothie">signature smoothie</Dropdown.Item>
+            <Dropdown.Item href="#specialty-drink">specialty drink</Dropdown.Item>
+            <Dropdown.Item href="#fresh-brewed-tea">fresh brewed tea</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+
+        <Link to="/cart">
+          <FontAwesomeIcon
+            className="cart-icon"
+            icon={["fas", "shopping-cart"]}
+          />
+        </Link>
       </div>
-      
-
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

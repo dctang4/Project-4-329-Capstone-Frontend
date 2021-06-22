@@ -49,7 +49,7 @@ const Order = (props) => {
     return (
       <div className="order">
         <h1>Menu</h1>
-        <h2>FRESH FRUITY ICED TEA</h2>
+        <h2 id="fruit-tea">FRESH FRUITY ICED TEA</h2>
         <div className="order-items">
           <div className="sizes">
             <h5>{click}</h5>
@@ -59,7 +59,7 @@ const Order = (props) => {
 
           {fruitTea}
         </div>
-        <h2>
+        <h2 id="yakult">
           <span>Yakult</span> DRINK
         </h2>
         <div className="order-items">
@@ -71,7 +71,7 @@ const Order = (props) => {
 
           {yakult}
         </div>
-        <h2>MILKCAP</h2>
+        <h2 id="milkcap">MILKCAP</h2>
         <div className="order-items">
           <div className="sizes">
             <h5>{click}</h5>
@@ -81,7 +81,7 @@ const Order = (props) => {
 
           {milkCap}
         </div>
-        <h2>FRESH MILK</h2>
+        <h2 id="milk">FRESH MILK</h2>
         <div className="order-items">
           <div className="sizes">
             <h5>{click}</h5>
@@ -91,7 +91,7 @@ const Order = (props) => {
 
           {milk}
         </div>
-        <h2>SLUSH/SMOOTHIE</h2>
+        <h2 id="smoothie">SLUSH/SMOOTHIE</h2>
         <div className="order-items">
           <div className="sizes">
             <h5>{click}</h5>
@@ -101,7 +101,7 @@ const Order = (props) => {
 
           {smoothie}
         </div>
-        <h2>MILK TEA</h2>
+        <h2 id="milk-tea">MILK TEA</h2>
         <div className="order-items">
           <div className="sizes">
             <h5>{click}</h5>
@@ -111,7 +111,7 @@ const Order = (props) => {
 
           {milkTea}
         </div>
-        <h2>SIGNATURE SMOOTHIES</h2>
+        <h2 id="signature-smoothie">SIGNATURE SMOOTHIES</h2>
         <div className="order-items">
           <div className="sizes">
             <h5>{click}</h5>
@@ -121,7 +121,7 @@ const Order = (props) => {
 
           {signature}
         </div>
-        <h2>SPECIALTY DRINK</h2>
+        <h2 id="specialty-drink">SPECIALTY DRINK</h2>
         <div className="order-items">
           <div className="sizes">
             <h5>{click}</h5>
@@ -131,7 +131,7 @@ const Order = (props) => {
 
           {specialty}
         </div>
-        <h2>FRESH BREWED TEA</h2>
+        <h2 id="fresh-brewed-tea">FRESH BREWED TEA</h2>
         <div className="order-items">
           <div className="sizes">
             <h5>{click}</h5>
