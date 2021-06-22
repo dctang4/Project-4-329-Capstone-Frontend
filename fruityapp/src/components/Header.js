@@ -21,10 +21,6 @@ const Header = (props) => {
   };
   const cartCount = cartCounter();
 
-  const handleClick = (event) => {
-    event.preventDefault();
-  };
-
   return (
     <div className="header">
       <Link to="/">
