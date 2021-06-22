@@ -37,7 +37,7 @@
     .cart-count {
       position: relative;
       bottom: 25px;
-      right: -105px;
+      right: -127px;
       color: black;
       margin: 0;
       font-size: 14px;
@@ -59,9 +59,11 @@
         background: none;
         border: none;
         color: $fruity;
-        padding-left: 4px;
-        padding-bottom: 0;
-        margin-left: 5px;
+        padding: 6px 12px 0 5px;
+        margin: 0 8px 0 5px;
+        &:hover {
+          color: green;
+        }
       }
     }
     a {
